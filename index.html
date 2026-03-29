@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="AmmiyV0NC_eU93Y4wyM-mqAp2mHIKtBgtAn2COcLej4" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheAbdoInc | ZBlock Crush - Early Access</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --secondary: #9d50bb;
+            --dark: #0f0c29;
+            --text: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        .brand {
+            font-weight: 800;
+            letter-spacing: 5px;
+            margin-bottom: 3rem;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+
+        .brand span { color: var(--primary); text-shadow: 0 0 15px rgba(0, 210, 255, 0.5); }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--primary);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
+        }
+
+        .game-title {
+            font-size: clamp(3rem, 12vw, 5.5rem);
+            font-weight: 800;
+            line-height: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .game-title .white { color: #fff; display: block; }
+        .game-title .gradient {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            font-weight: 300;
+            opacity: 0.75;
+            margin: 0 auto 3rem auto;
+            max-width: 500px;
+            line-height: 1.7;
+        }
+
+        /* Buton Stili */
+        .btn-primary {
+            display: inline-block;
+            padding: 18px 50px;
+            background: var(--primary);
+            color: #000;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(0, 210, 255, 0.3);
+            text-transform: uppercase;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 210, 255, 0.5);
+            background: #fff;
+        }
+
+        .social-links {
+            margin-top: 3.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 0.85rem;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            opacity: 1;
+            color: var(--primary);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(0, 210, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0); }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.75rem;
+            opacity: 0.4;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    
+    <main class="container">
+        <header>
+            <h2 class="brand">THE<span>ABDO</span>INC</h2>
+        </header>
+
+        <section>
+            <div class="badge">Play Test Now Available</div>
+            <h1 class="game-title">
+                <span class="white">ZBLOCK</span>
+                <span class="gradient">CRUSH</span>
+            </h1>
+            <p class="description">
+                Download the early access build now and help us shape the future of block-crushing strategy.
+            </p>
+            
+            <a href="zblockcrushbeta.apk" class="btn-primary" download>
+                Download APK
+            </a>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/theabdo.inc/" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/@Mpixt" target="_blank">YouTube</a>
+                <a href="#" target="_blank">Discord</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 TheAbdoInc. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
